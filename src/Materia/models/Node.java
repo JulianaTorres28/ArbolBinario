@@ -1,14 +1,15 @@
 package Materia.models;
 
 public class Node {
-    public int value;
-    public Node left;
-    public Node right;
 
-    public Node(int value) {
-        this.value = value;
+    private int value;
+    private Node left;
+    private Node right;
+
+    public Node(int value){
         this.left = null;
         this.right = null;
+        this.value = value;
     }
 
     public int getValue() {
@@ -35,6 +36,10 @@ public class Node {
         this.right = right;
     }
 
+    @Override
+    public String toString() {
+        return "Node [value=" + value + "]";
+    }
+
     
 }
-    
