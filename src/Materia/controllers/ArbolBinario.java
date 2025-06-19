@@ -97,17 +97,17 @@ public class ArbolBinario {
         }
     }
 
-    public void imprimirInOrderConFE() {
-        imprimirInOrderConFE(root);
+    public void imprimirInOrderConFactorEquilibrio() {
+        imprimirInOrderConFactorEquilibrio(root);
         System.out.println();
     }
 
-    private void imprimirInOrderConFE(Node node) {
+    private void imprimirInOrderConFactorEquilibrio(Node node) {
         if (node != null) {
-            imprimirInOrderConFE(node.getLeft());
+            imprimirInOrderConFactorEquilibrio(node.getLeft());
             int bf = getBalanceFactor(node);
             System.out.print(node.getValue() + "(bf=" + bf + "), ");
-            imprimirInOrderConFE(node.getRight());
+            imprimirInOrderConFactorEquilibrio(node.getRight());
         }
     }
 

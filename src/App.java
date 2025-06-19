@@ -24,7 +24,7 @@ public class App {
         ab.imprimirInOrderConAlturas();
 
         System.out.print("\nArbol InOrder con factor de equilibrio\n");
-        ab.imprimirInOrderConFE();
+        ab.imprimirInOrderConFactorEquilibrio();
 
         System.out.println("\nArbol esta equilibrado = " + ab.estaEquilibrado());
 
@@ -32,7 +32,7 @@ public class App {
         ab.insert(15);
 
         System.out.print("\nArbol InOrder con factor de equilibrio\n");
-        ab.imprimirInOrderConFE();
+        ab.imprimirInOrderConFactorEquilibrio();
 
         ab.imprimirNodosDesequilibrados();
     }
